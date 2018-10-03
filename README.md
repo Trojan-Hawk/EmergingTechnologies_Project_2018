@@ -1,4 +1,4 @@
-"# Emerging Technologies Project 2018" 
+# Emerging Technologies Project 2018 
 
 I am a student currently in my 4th year of study in GMIT's BSc Software Development course. This project was created as part of our Emerging Technologies module, lectured by Dr.Ian Mcloughlin.
 
