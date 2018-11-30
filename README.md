@@ -43,3 +43,9 @@ This will run the script file in the terminal.
     Part 5:
 Download the "digit-recognition.ipyn" file from this repository, this is a jupyter notebook file. To run this Jupyter Notebook navigate to the directory it is located in using a terminal. Next type the following command followed by return: '*jupyter notebook*'
 This will open up a jupyter notebook session in your default browser. You will need to select the "digit-recognition.ipyn" file from the browser, this will open a new tab in browser where the notebook can be run and/or edited.
+
+### Additional Files and Directories
+
+In this repositoy I have included a 'Test_Images' directory which contains images that are not contained in the MNIST dataset, these are here strictly for testing purposes. I have also included a 'ResultImages' directory, this contains screen captures of the various console output metrics used in the digit-recognition notebook. The pre-compiled weights files(.h5) have also been included, these may be used in the 'digitrec.py' script by simply renaming them to 'weights.h5'.
+
+The images in both the 'Test_Images' and 'ResultImages' directories are my own work, they may be used by anyone.
