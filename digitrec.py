@@ -64,7 +64,6 @@ def prediction(imageURL):
     test_image = np.expand_dims(test_image, axis = 0)
     test_image = np.expand_dims(test_image, axis = 0)
     result = model.predict(test_image)
-    
     print(result)
 
 # build the model
@@ -95,7 +94,6 @@ while True:
         file_path = filedialog.askopenfilename()
         # call the prediction method of our model
         prediction(file_path)
-
     except:
         print("No file selected. Exiting application!")
         break
