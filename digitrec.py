@@ -1,4 +1,4 @@
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 import numpy as np
 # keras imports
 from keras.datasets import mnist
@@ -44,17 +44,18 @@ num_classes = Y_test.shape[1]
 # define the model
 def modelDefn():
 	# create model
-	model = Sequential()
-	model.add(Conv2D(32, (5, 5), input_shape=(1, 28, 28), activation='relu'))
-	model.add(MaxPooling2D(pool_size=(2, 2)))
-	model.add(Dropout(0.2))
-	model.add(Flatten())
-	model.add(Dense(128, activation='relu'))
-	model.add(Dense(num_classes, activation='softmax'))
-	# Compile model
-	model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
+    model = Sequential()
+    # layer definitions
+    model.add(Conv2D(32, (5, 5), input_shape=(1, 28, 28), activation='relu'))
+    model.add(MaxPooling2D(pool_size=(3, 3)))
+    model.add(Dropout(0.2))
+    model.add(Flatten())
+    model.add(Dense(128, activation='relu'))
+    model.add(Dense(num_classes, activation='softmax'))
+    # Compile model
+    model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
     # model.compile(loss='categorical_crossentropy', optimizer='sgd', metrics=['accuracy'])
-	return model
+    return model
 
 def prediction(imageURL):
     prediction = ""
@@ -63,28 +64,8 @@ def prediction(imageURL):
     test_image = np.expand_dims(test_image, axis = 0)
     test_image = np.expand_dims(test_image, axis = 0)
     result = model.predict(test_image)
-    # training_set.class_indices
-    if(result[0][0] >= 1):
-        prediction = "Digit is probably zero."
-    elif(result[0][1] >= 1):
-        prediction = "Digit is probably one."
-    elif(result[0][2] >= 1):
-        prediction = "Digit is probably two."
-    elif(result[0][3] >= 1):
-        prediction = "Digit is probably three."
-    elif(result[0][4] >= 1):
-        prediction = "Digit is probably four."
-    elif(result[0][5] >= 1):
-        prediction = "Digit is probably five."
-    elif(result[0][6] >= 1):
-        prediction = "Digit is probably six."
-    elif(result[0][7] >= 1):
-        prediction = "Digit is probably seven."
-    elif(result[0][8] >= 1):
-        prediction = "Digit is probably eight."
-    elif(result[0][9] >= 1):
-        prediction = "Digit is probably nine."
-    print(prediction)
+    
+    print(result)
 
 # build the model
 model = modelDefn()
@@ -96,7 +77,7 @@ if path.isfile(h5FileName):
 else:
     print("Creating Neural Net and saving Weights to file")
     # Fit the model
-    model.fit(X_train, Y_train, validation_data=(X_test, Y_test), epochs=15, batch_size=250, verbose=2)
+    model.fit(X_train, Y_train, validation_data=(X_test, Y_test), epochs=14, batch_size=200, verbose=2)
     model.save_weights(h5FileName)
 
 # Final evaluation of the model

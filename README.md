@@ -25,21 +25,21 @@ To run the Jupyter notebooks it is required to have previously downloaded and in
 The terminal will be used to run all of the commands below, if you do not know how to access the terminal click on the appropiate link, [Windows](https://www.digitalcitizen.life/7-ways-launch-command-prompt-windows-7-windows-8), [Mac OS X](https://www.wikihow.com/Open-a-Terminal-Window-in-Mac), [Ubuntu](https://www.lifewire.com/ways-to-open-a-terminal-console-window-using-ubuntu-4075024). 
 
     *Part 1:*
-Download the "numpy-random.ipynb" file from this repository, this is a jupyter notebook file. To run this Jupyter Notebook navigate to the directory it is located in using a terminal. Next type the following command followed by return: *jupyter notebook*
+Download the "numpy-random.ipynb" file from this repository, this is a jupyter notebook file. To run this Jupyter Notebook navigate to the directory it is located in using a terminal. Next type the following command followed by return: '*jupyter notebook*'
 This will open up a jupyter notebook session in your default browser. You will need to select the "numpy-random.ipynb" file from the browser, this will open a new tab in browser where the notebook can be run and/or edited.
 
     *Part 2:*
-Download the "iris-dataset.ipynb" file from this repository, this is a jupyter notebook file. To run this Jupyter Notebook navigate to the directory it is located in using a terminal. Next type the following command followed by return: *jupyter notebook*
+Download the "iris-dataset.ipynb" file from this repository, this is a jupyter notebook file. To run this Jupyter Notebook navigate to the directory it is located in using a terminal. Next type the following command followed by return: '*jupyter notebook*'
 This will open up a jupyter notebook session in your default browser. You will need to select the "iris-dataset.ipynb" file from the browser, this will open a new tab in browser where the notebook can be run and/or edited.
 
     *Part 3:*
-Download the "mnist-dataset.ipyn" file from this repository, this is a jupyter notebook file. To run this Jupyter Notebook navigate to the directory it is located in using a terminal. Next type the following command followed by return: *jupyter notebook*
+Download the "mnist-dataset.ipyn" file from this repository, this is a jupyter notebook file. To run this Jupyter Notebook navigate to the directory it is located in using a terminal. Next type the following command followed by return: '*jupyter notebook*'
 This will open up a jupyter notebook session in your default browser. You will need to select the "mnist-dataset.ipyn" file from the browser, this will open a new tab in browser where the notebook can be run and/or edited.
 
     *Part 4:*
-Download the "digitrec.py" file from this repository, this is a python script file. To run this script navigate to the directory it is located in using a terminal. Next type the following command followed by return: *python.exe digitrec.py*
+Download the "digitrec.py" file from this repository, this is a python script file. To run this script navigate to the directory it is located in using a terminal. Next type the following command followed by return: '*python.exe digitrec.py*'
 This will run the script file in the terminal.
 
     *Part 5:*
-Download the "digit-recognition.ipyn" file from this repository, this is a jupyter notebook file. To run this Jupyter Notebook navigate to the directory it is located in using a terminal. Next type the following command followed by return: *jupyter notebook*
+Download the "digit-recognition.ipyn" file from this repository, this is a jupyter notebook file. To run this Jupyter Notebook navigate to the directory it is located in using a terminal. Next type the following command followed by return: '*jupyter notebook*'
 This will open up a jupyter notebook session in your default browser. You will need to select the "digit-recognition.ipyn" file from the browser, this will open a new tab in browser where the notebook can be run and/or edited.

@@ -40,7 +40,7 @@
 ehthumbs.db
 Thumbs.db
 
-# Excluded Directories #
+# Excluded Files #
 ########################
 mnist.pkl/
-Test_Images/
+digitrec(simple).py/
